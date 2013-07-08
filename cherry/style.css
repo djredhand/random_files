@@ -334,7 +334,7 @@ li.sfHover > a > .sf-sub-indicator {
   padding-bottom: 50px;
 }
 #content {
-  padding-top: 40px;
+  padding-top: 0px;
 }
 #content.left {
   position: relative;
