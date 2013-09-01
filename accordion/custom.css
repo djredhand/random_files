@@ -1,4 +1,9 @@
-#pwcmobile #homeslider {
+/* -- PWC css Hacks -- */
+ #center-col{
+ 	float:left;
+ }
+/* -- End PWC css Hacks -- */
+#pwcmobile{
   width: 100% !important;
   height: 100% !important;
   color: #fff;
@@ -63,15 +68,25 @@
 	border-right: 4px solid #EB8C00;
 	line-height: 10px;
 	padding: 2px;
+	cursor: pointer;
+	vertical-align: middle;
 }
-#hm-cont-header{
+#accorion-list li.accordion p.one-line{
+	vertical-align: middle;
+	margin: 5px 0 0 0;
+}
+.hm-cont-header.active{
+	display: block !important;
+}
+.hm-cont-header{
 	margin: 0 20px;
+	display: none;
 }
-#hm-cont-header h2{
+.hm-cont-header h2{
 	color: #fff;
 	font-size: 24px;
 	margin: 20px 0 0 0;
 }
-#hm-cont-header p{
+.hm-cont-header p{
 	padding: 0 140px 0 0;
 }
