@@ -1,0 +1,47 @@
+#pwcmobile #homeslider {
+  width: 100% !important;
+  height: 100% !important;
+  color: #fff;
+  font-family: Georgia, "Times New Roman";
+ }
+ .hf-block-color1{
+ 	width: 718px;
+ 	height:200px;
+ 	background:#E0301E;
+ }
+
+ .hf-block-white1{
+ 	width: 50px;
+ 	height:200px;
+ 	background: #fff;
+ }
+  .hf-block-white2{
+ 	width: 718px;
+ 	height:20px;
+ 	background:#fff;
+ }
+
+ .hf-block-color2{
+ 	width: 50px;
+ 	height:20px;
+ 	background: #E0301E;
+ }
+
+
+#right-col-pwc-custom {
+	height: 566px;
+	position: absolute;
+	right: 0;
+	width: 210px;
+}
+.hf-block-white1, .hf-block-color1, .hf-block-white2, .hf-block-color2{
+	float: left;
+}
+.hm-inner-cont{
+	clear:both;
+	min-height: 100px;
+}
+.hm-cont{
+	width: 768px;
+	clear: both;
+}
