@@ -5,7 +5,7 @@
   font-family: Georgia, "Times New Roman";
  }
  .hf-block-color1{
- 	width: 718px;
+ 	width: 698px;
  	height:200px;
  	background:#E0301E;
  }
@@ -39,9 +39,22 @@
 }
 .hm-inner-cont{
 	clear:both;
-	min-height: 100px;
+	min-height: 30px;
 }
 .hm-cont{
 	width: 768px;
 	clear: both;
+}
+#accorion-list{
+	position: absolute;
+	right:0;
+}
+#accorion-list li.accordion{
+	background: rgb(219, 83, 106);
+	height: 20px;
+	list-style: none;
+	width: 150px;
+	margin: 5px 0;
+	border-left: 4px solid #EB8C00;
+	border-right: 4px solid #EB8C00;
 }
