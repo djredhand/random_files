@@ -257,15 +257,10 @@
 
 
 	</style>
-	<!-- START DISCLAIMER CODE -->
-	<?php 
-	  $template_dir = get_template_directory_uri(); 
-	  print '<script>window.templateDir="'. $template_dir .'"</script>';
-	?>
-	<script src="<?php echo $template_dir;?>/js/jQuery_cookie.js"></script>
-	<!-- END DISCLAIMER CODE -->
 
 </head>
+
+
 
 <body <?php body_class(); ?>>
 
@@ -290,21 +285,3 @@
 		    </div>
 
 		</header>
-
-		<div class="motopress-wrapper nav-container">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="span12" data-motopress-wrapper-file="wrapper/wrapper-nav.php" data-motopress-wrapper-type="header">
-
-						<?php get_template_part('wrapper/wrapper-nav'); ?>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>

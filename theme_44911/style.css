@@ -4424,3 +4424,12 @@ h1, h2, h3, h4, h5, h6{
 .post-content .row{
   margin-top: 50px;
 }
+
+.legal-text a{
+  color: #fff !important;
+  text-decoration: underline;
+}
+.legal-text a:hover{
+  color: #fff !important;
+  text-decoration: underline;
+}
