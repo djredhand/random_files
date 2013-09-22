@@ -25,6 +25,10 @@ var news_accordion = {
 		list.addClass('hidden');
 		jQuery(list[0]).removeClass('hidden');
 		jQuery(list[0]).addClass('open-news-item');
+
+		jQuery('.open-news-item .acc-news').css({
+			height: jQuery('.open-news-item').height() + 'px'
+		})
 	},
 
 	get_section_height: function(section){
@@ -45,7 +49,7 @@ var news_accordion = {
 		var sections = jQuery('section.content-section.grid-list');
 		sections.each(function(){
 			if(jQuery(this).attr('class') !== "open-news-item"){
-				jQuery(this).slideUp()
+				jQuery(this).slideUp("slow")
 			}
 		})
 	},
