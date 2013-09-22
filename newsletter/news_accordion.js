@@ -54,7 +54,10 @@ var news_accordion = {
 window.current_section = section;
 		section.removeClass('hidden')
 		section.addClass('.open-news-item');
-		section.slideDown("slow");
+		section.slideDown("slow", function(){
+			section.find('.acc-news').css({height: section.height() + 'px'  })
+		} );
+		
 	}
 
 }
