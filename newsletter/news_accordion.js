@@ -12,7 +12,7 @@ var news_accordion = {
 			var current_section = news_accordion.find_current_section();
 			var section = jQuery(this).next();
 			var height = news_accordion.get_section_height(section);
-
+			section.css({height:'auto'})
 			news_accordion.close_list_item(current_section);
 			//console.log(news_accordion.find_current_section(jQuery('.acc-header-btn-cont')));
 			news_accordion.animate_section(section, height);
@@ -24,6 +24,7 @@ var news_accordion = {
 		var list = jQuery('.content-section.grid-list');
 		list.addClass('hidden');
 		jQuery(list[0]).removeClass('hidden');
+		jQuery(list[0]).addClass('open-news-item');
 	},
 
 	get_section_height: function(section){
@@ -36,47 +37,24 @@ var news_accordion = {
 	},
 
 	find_current_section: function(){
-		var open_item;
-		jQuery('section.content-section.grid-list').each(function(){
-			item = jQuery(this);
-			if (item.css('display') !== "none"){
-				open_item = item;
-				return(open_item);
-
-			}
-		})
-		return open_item;
+		return jQuery('.open-news-item');
 		
 	},
 
 	close_list_item: function(section){
 		var sections = jQuery('section.content-section.grid-list');
 		sections.each(function(){
-			jQuery(this).animate({
-				height: '0px'
-			})
+			if(jQuery(this).attr('class') !== "open-news-item"){
+				jQuery(this).slideUp()
+			}
 		})
-
-		/*
-			window.current_section = section;
-			window.current_section.original_height = section.height();
-			section.animate({
-				height: '0px'
-			}, function(){
-				console.log(section)
-				jQuery(section).addClass('.hidden');
-			})
-		*/
 	},
 
 	animate_section:function(section, h){
-		section.css({
-			height: '0px'
-		})
+window.current_section = section;
 		section.removeClass('hidden')
-		section.animate({
-			height: '100px'
-		}, 100)
+		section.addClass('.open-news-item');
+		section.slideDown();
 	}
 
 }
