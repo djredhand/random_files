@@ -29,11 +29,20 @@
 /** COLORS **/
 .acc-news .heading{
 	background: url('news-col-bg.png');
+min-height: 286px;
+max-height: 286px;
 }
 .red{
 	background: #e41926;
 }
+.pink{
+	background: #e7335a;
+}
 .orange{
+	background: #f38e02;
+}
+
+.red-orange{
 	background: #eb6409;
 }
 
