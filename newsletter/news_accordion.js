@@ -77,7 +77,8 @@ var news_accordion = {
 		section.removeClass('hidden')
 		section.addClass('open-news-item');
 		section.slideDown("slow", function(){
-			section.find('.acc-news').css({height: section.height() + 'px'  })
+			section_height = section.height() - 22;
+			section.find('.acc-news').css({height: section_height + 'px'  })
 			console.log(section.parent().prev().offset())
 		} );
 		var top_offset = jQuery(jQuery('.acc-news')[0]).offset().top;
@@ -100,6 +101,11 @@ jQuery(document).ready(function(){
 	jQuery('font.acc-news-link').click(function(){
 		var link = jQuery(this).attr('link');
 		link = 'http://www.pwc.com/' + link;
+		window.open(link);
+	})
+
+	jQuery('font.acc-news-link2').click(function(){
+		var link = jQuery(this).attr('link');
 		window.open(link);
 	})
 
