@@ -30,8 +30,7 @@ var news_accordion = {
 				window.cu_sec= jQuery(this).next()
 				window.current_section = jQuery(this).next();
 				window.current_section.addClass('open-news-item');
-				//console.log(window.current_section);
-				
+				//console.log(window.current_section);			
 			}
 
 			if(current_section.hasClass('open-news-item') ){
