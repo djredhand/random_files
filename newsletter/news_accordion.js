@@ -76,7 +76,7 @@ var news_accordion = {
 		window.current_section = section;
 		section.removeClass('hidden')
 		section.addClass('open-news-item');
-		section.slideDown("slow", function(){
+		section.slideDown(1000, function(){
 			section_height = section.height() - 22;
 			section.find('.acc-news').css({height: section_height + 'px'  })
 			console.log(section.parent().prev().offset())
