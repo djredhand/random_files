@@ -16,8 +16,29 @@ var news_accordion = {
 			var height = news_accordion.get_section_height(section);
 			section.css({height:'auto'})
 			news_accordion.close_list_item(current_section);
-			//console.log(news_accordion.find_current_section(jQuery('.acc-header-btn-cont')));
-			news_accordion.animate_section(section, height);
+			if(jQuery('.open-news-item').length>0 ){
+				//alert('there is')
+				if(current_section[0] == jQuery(this).next()[0]){
+					//alert('yep')
+				}else{
+					console.log(current_section);
+					//alert('nope')
+					console.log(jQuery(this).next())
+					news_accordion.animate_section(jQuery(this).next(), height);
+				}
+			}else{
+				window.cu_sec= jQuery(this).next()
+				window.current_section = jQuery(this).next();
+				window.current_section.addClass('open-news-item');
+				//console.log(window.current_section);
+				
+			}
+
+			if(current_section.hasClass('open-news-item') ){
+				current_section.removeClass('open-news-item');
+			}else{
+				news_accordion.animate_section(section, height);
+			}
 		})
 	},
 
@@ -55,7 +76,7 @@ var news_accordion = {
 	animate_section:function(section, h){
 		window.current_section = section;
 		section.removeClass('hidden')
-		section.addClass('.open-news-item');
+		section.addClass('open-news-item');
 		section.slideDown("slow", function(){
 			section.find('.acc-news').css({height: section.height() + 'px'  })
 			console.log(section.parent().prev().offset())
