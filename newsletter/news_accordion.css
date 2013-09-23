@@ -6,7 +6,7 @@
 .acc-header-btn{
 	float: left;
 	width: 15px;
-	padding: 4px 5px 2px;
+	padding: 4px 5px 4px;
 	background: #999;
 	height: 18px;
 	color: #fff;
@@ -27,7 +27,11 @@
 }
 
 /** COLORS **/
+.acc-news .heading h2{
+	font-family: Georgia, serif !important;
+}
 .acc-news .heading{
+	font-family: Georgia, serif !important;
 	background: url('news-col-bg.png');
 min-height: 286px;
 max-height: 286px;
@@ -46,7 +50,46 @@ max-height: 286px;
 	background: #eb6409;
 }
 
+.maroon{
+	background: #821018;
+}
 .col-red-orange{
 	color: #eb6409;
 }
 
+.news-inner-content img{
+	max-width: 482px;
+}
+h2.news-header{
+	font-family: Georgia, serif !important;
+	min-height: 31px;
+	max-height: 3px;
+	margin: 12px 0 0 0;
+	padding: 12px;
+	color: #fff !important;
+	}
+
+h2.red{
+	background: url("news-header-bg.png") #e41926 no-repeat;
+
+}
+h2.pink{
+	background: #e7335a;
+}
+h2.orange{
+	background: #f38e02;
+}
+
+h2.red-orange{
+	background: #eb6409;
+}
+
+h2.maroon{
+	background: #821018;
+}
+
+.news-inner-content p{
+ 	background: #f0f0f1;
+	padding: 10px 10px 0 10px;
+	margin: 0px 0 10px 0;
+ }

@@ -2,8 +2,10 @@
 var news_accordion = {
 
 	init: function(){
+
 		news_accordion.hide_list();
 		news_accordion.list_item_click();
+
 	},
 
 	/* Listener */
@@ -36,10 +38,6 @@ var news_accordion = {
 		window.clone = clone;
 	},
 
-	open_list_item: function(){
-		var list_btns;
-	},
-
 	find_current_section: function(){
 		return jQuery('.open-news-item');
 		
@@ -55,12 +53,18 @@ var news_accordion = {
 	},
 
 	animate_section:function(section, h){
-window.current_section = section;
+		window.current_section = section;
 		section.removeClass('hidden')
 		section.addClass('.open-news-item');
 		section.slideDown("slow", function(){
 			section.find('.acc-news').css({height: section.height() + 'px'  })
+			console.log(section.parent().prev().offset())
 		} );
+		var top_offset = jQuery(jQuery('.acc-news')[0]).offset().top;
+		var section_index = window.current_section.parent().prevAll().length
+		console.log(top_offset + (section_index*25) );
+		window.scrollTo(0, 	top_offset);
+
 		
 	}
 
@@ -70,5 +74,7 @@ window.current_section = section;
 jQuery(document).ready(function(){
 
 	news_accordion.init();
+	window.current_section = jQuery(jQuery('.acc-news')[0]).parent();
+	window.current_section.find('.acc-news').css({height: window.current_section.height() + 'px'  })
 
 }) //end doc.ready
