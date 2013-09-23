@@ -62,12 +62,13 @@ max-height: 286px;
 
 .news-inner-content img{
 	max-width: 482px;
+	padding: 0 0 10px 0;
 }
 h2.news-header{
 	font-family: Georgia, serif !important;
 	min-height: 14px;
 	max-height: 3px;
-	margin: 12px 0 0 0;
+	margin:0;
 	padding: 2px 0 22px 12px;
 	color: #fff !important;
 	font-size: 14px;
