@@ -97,4 +97,10 @@ jQuery(document).ready(function(){
 	window.current_section = jQuery(jQuery('.acc-news')[0]).parent();
 	window.current_section.find('.acc-news').css({height: window.current_section.height() + 'px'  })
 
+	jQuery('font.acc-news-link').click(function(){
+		var link = jQuery(this).attr('link');
+		link = 'http://www.pwc.com/' + link;
+		window.open(link);
+	})
+
 }) //end doc.ready

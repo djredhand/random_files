@@ -60,7 +60,7 @@ max-height: 286px;
 	color: #eb6409;
 }
 .news-inner-content{
-	
+
 }
 .news-inner-content img{
 	max-width: 482px;
@@ -100,3 +100,10 @@ h2.maroon{
 	padding: 10px 10px 0 10px;
 	margin: 0px 0 10px 0;
  }
+
+font.acc-news-link{
+	font-weight: normal;
+	text-decoration: underline;
+	cursor: pointer;
+	color: #821018 !important;
+}
