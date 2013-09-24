@@ -14,7 +14,7 @@ var news_accordion = {
 			var current_section = news_accordion.find_current_section();
 			var section = jQuery(this).next();
 			var height = news_accordion.get_section_height(section);
-			section.css({height:'auto'})
+			section.css({height:'auto', margin:'0 0 -10px'})
 			news_accordion.close_list_item(current_section);
 			if(jQuery('.open-news-item').length>0 ){
 				//alert('there is')
@@ -45,8 +45,8 @@ var news_accordion = {
 	hide_list: function(){
 		var list = jQuery('.content-section.grid-list');
 		list.addClass('hidden');
-		jQuery(list[0]).removeClass('hidden');
-		jQuery(list[0]).addClass('open-news-item');
+		//jQuery(list[0]).removeClass('hidden');
+		//jQuery(list[0]).addClass('open-news-item');
 
 		jQuery('.open-news-item .acc-news').css({
 			height: jQuery('.open-news-item').height() + 'px'
@@ -76,10 +76,9 @@ var news_accordion = {
 		window.current_section = section;
 		section.removeClass('hidden')
 		section.addClass('open-news-item');
-		section.slideDown(1000, function(){
+		section.slideDown(1000 ,function(){
 			section_height = section.height() - 22;
 			section.find('.acc-news').css({height: section_height + 'px'  })
-			console.log(section.parent().prev().offset())
 		} );
 		var top_offset = jQuery(jQuery('.acc-news')[0]).offset().top;
 		var section_index = window.current_section.parent().prevAll().length
@@ -108,5 +107,11 @@ jQuery(document).ready(function(){
 		var link = jQuery(this).attr('link');
 		window.open(link);
 	})
+
+	// trigger first newsletter
+
+	//jQuery(jQuery('.acc-header-btn-cont')[0]).removeClass('open-news-item');
+	jQuery(jQuery('.acc-header-btn-cont')[0]).trigger('click');
+	//jQuery(jQuery('.acc-header-btn-cont')[0]).trigger('click');
 
 }) //end doc.ready

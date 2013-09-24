@@ -7,12 +7,12 @@
 	float: left;
 	width: 30px;
 	padding: 4px 5px 4px 4px;
-	background: #999;
+	background: url('acc-news-btn-bg.jpg')#999 no-repeat ;
 	height: 18px;
 	color: #fff;
 	font-weight: bold;
 	font-family: Gerogia;
-	font-size: 56px;
+	font-size: 38px;
 	line-height: 30px;
 	height: 30px;
 }
@@ -23,10 +23,11 @@
 	width:685px;
 }
 .acc-header h4{
+	font-family: Georgia, serif;
 	padding: 0 8px 0 !important;
 	color: #fff !important;
-	font-size: 24px;
-	margin: 7px 15px 3px 10px;
+	font-size: 1.5em !important;
+	margin:7px 15px 5px 10px;
 }
 
 /** COLORS **/
@@ -97,7 +98,7 @@ h2.maroon{
 
 .news-inner-content p{
  	background: #f0f0f1;
-	padding: 10px 10px 0 10px;
+	padding: 10px;
 	margin: 0px 0 10px 0;
  }
 .news-inner-content ul{
