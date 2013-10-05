@@ -3,8 +3,9 @@ $(document).ready(function(){
 	function listen_handle_close_div(div){
 		div = $(div);
 		div.click(function(){
-			$(".slidingDiv").slideToggle();
-			$('.close_slide_div').remove();
+			$(".slidingDiv").slideToggle(function(){
+				$('.close_slide_div').remove();
+			});
 		})
 		return div
 	}
@@ -16,9 +17,7 @@ $(document).ready(function(){
     	slide_div.slideToggle();
     	
 
-    	if($(this).next().children('.close_slide_div').length >1){
-    		a=1;
-    	}else{
+    	if(!$(this).next().children('.close_slide_div').length >0){
     		slide_div.append(close_div);
     		listen_handle_close_div(close_div);
     	}
