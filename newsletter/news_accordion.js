@@ -109,9 +109,10 @@ jQuery(document).ready(function(){
 	})
 
 	// trigger first newsletter
-
-	//jQuery(jQuery('.acc-header-btn-cont')[0]).removeClass('open-news-item');
 	jQuery(jQuery('.acc-header-btn-cont')[0]).trigger('click');
-	//jQuery(jQuery('.acc-header-btn-cont')[0]).trigger('click');
+	var inner_height = jQuery(jQuery('.news-inner-content')[0]).height();
+	jQuery('.open-news-item .col.acc-news').css('height', inner_height + 'px');
+
+
 
 }) //end doc.ready
