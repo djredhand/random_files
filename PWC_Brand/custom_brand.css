@@ -32,10 +32,10 @@
 }
 
 /** COLORS **/
-.brand-news .heading h2{
+.brand-custom .heading h2{
 	font-family: Georgia, serif !important;
 }
-.brand-news .heading{
+.brand-custom .heading{
 	font-family: Georgia, serif !important;
 	background: url('news-col-bg.png');
 min-height: 286px;
@@ -58,17 +58,20 @@ max-height: 286px;
 .maroon{
 	background: #821018;
 }
+.col-light-white{
+	background: #f2f2f2;
+}
 .col-red-orange{
 	color: #eb6409;
 }
-.news-inner-content{
+.brand-inner-content{
 
 }
-.news-inner-content img{
+.brand-inner-content img{
 	max-width: 482px;
 	padding: 0 0 10px 0;
 }
-h2.news-header{
+h2.brand-header{
 	font-family: Georgia, serif !important;
 	min-height: 13px;
 	max-height: 3px;
@@ -97,27 +100,27 @@ h2.maroon{
 	background: url("news-header-bg.png") #821018 no-repeat;
 }
 
-.news-inner-content p{
+.brand-inner-content p{
  	background: #f0f0f1;
 	padding: 10px;
 	margin: 0px 0 10px 0;
  }
-.news-inner-content ul{
+.brand-inner-content ul{
 	background: #f0f0f1;
 	padding: 0 !important;
 	margin: 0 !important;
 }
-.news-inner-content ul li{
+.brand-inner-content ul li{
 	list-style: none !important;
 	display: inline;
 }
-font.brand-news-link{
+font.brand-cutsom-link{
 	font-weight: normal;
 	text-decoration: underline;
 	cursor: pointer;
 	color: #821018 !important;
 }
-font.brand-news-link2{
+font.brand-cutsom-link2{
 	font-weight: normal;
 	text-decoration: underline;
 	cursor: pointer;
