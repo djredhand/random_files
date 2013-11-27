@@ -26,7 +26,6 @@
 	};
 })(jQuery);
 
-
 jQuery(document).ready(function(){
 	$.fn.enservio_toggle()
 })
