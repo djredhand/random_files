@@ -1,9 +1,11 @@
 .section-wrap{
 	background: #f0f0f1 !important;
 }
-#main-container .col{
-	margin: 12px 0 12px 12px !important;
-	width: 224px;
+.col.brand-custom{
+	width: 224px !important;
+}
+.section-wrap.custom-brand-section{
+	padding: 12px 12px 0px 12px;
 }
 .brand-header-btn-cont{
 	width: 100%;
@@ -75,7 +77,7 @@ max-height: 286px;
  width:484px;
 }
 .brand-inner-content img{
-	max-width: 482px;
+	max-width: 472px;
 	padding: 0 0 10px 0;
 }
 h2.brand-header{
