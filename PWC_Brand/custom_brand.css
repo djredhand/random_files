@@ -1,3 +1,10 @@
+.section-wrap{
+	background: #f0f0f1 !important;
+}
+#main-container .col{
+	margin: 12px 0 12px 12px !important;
+	width: 224px;
+}
 .brand-header-btn-cont{
 	width: 100%;
 	height: 50px;
@@ -65,7 +72,7 @@ max-height: 286px;
 	color: #eb6409;
 }
 .brand-inner-content{
-
+ width:484px;
 }
 .brand-inner-content img{
 	max-width: 482px;
@@ -75,35 +82,36 @@ h2.brand-header{
 	font-family: Georgia, serif !important;
 	min-height: 13px;
 	max-height: 3px;
-	margin:0;
+	margin:0 0 12px 0;
 	padding: 2px 0 22px 12px;
 	color: #fff !important;
 	font-size: 14px;
+	width:460px;
 }
 
 h2.red{
-	background: url("news-header-bg.png") #e41926 no-repeat;
+	background: url("brand-header-bg.png") #e41926 no-repeat;
 
 }
 h2.pink{
-	background: url("news-header-bg.png") #e7335a no-repeat;
+	background: url("brand-header-bg.png") #e7335a no-repeat;
 }
 h2.orange{
-	background: url("news-header-bg.png") #f38e02 no-repeat;
+	background: url("brand-header-bg.png") #f38e02 no-repeat;
 }
 
 h2.red-orange{
-	background: url("news-header-bg.png") #eb6409 no-repeat;
+	background: url("brand-header-bg.png") #eb6409 no-repeat;
 }
 
 h2.maroon{
-	background: url("news-header-bg.png") #821018 no-repeat;
+	background: url("brand-header-bg.png") #821018 no-repeat;
 }
 
 .brand-inner-content p{
  	background: #f0f0f1;
 	padding: 10px;
-	margin: 0px 0 10px 0;
+	margin: 0px 20px 0 12px;
  }
 .brand-inner-content ul{
 	background: #f0f0f1;
