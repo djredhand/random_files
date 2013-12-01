@@ -82,13 +82,13 @@ max-height: 286px;
 }
 h2.brand-header{
 	font-family: Georgia, serif !important;
-	min-height: 13px;
-	max-height: 3px;
-	margin:0 0 12px 0;
-	padding: 2px 0 22px 12px;
+	min-height: 24px;
+	max-height: 14px;
+	margin: 0 0 12px 0;
+	padding: 12px 0 22px 12px;
 	color: #fff !important;
 	font-size: 14px;
-	width:460px;
+	width: 460px;
 }
 
 h2.red{
@@ -103,7 +103,7 @@ h2.orange{
 }
 
 h2.red-orange{
-	background: url("brand-header-bg.png") #eb6409 no-repeat;
+	background: url("brand-header-bg.png") #eb6409 bottom left no-repeat;
 }
 
 h2.maroon{
