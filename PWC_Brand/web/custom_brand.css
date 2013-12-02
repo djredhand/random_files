@@ -5,7 +5,12 @@
 	width: 224px !important;
 }
 .col.custom-brand-bottom{
-	width: 424px !important;
+	width: 484px !important;
+	margin: 0px !important;
+	background: #a4a7ac !important;
+}
+.col.custom-brand-bottom p{
+	color: #fff !important;
 }
 .section-wrap.custom-brand-section{
 	padding: 12px 12px 0px 12px;
