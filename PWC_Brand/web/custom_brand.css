@@ -12,6 +12,9 @@
 .col.custom-brand-bottom p{
 	color: #fff !important;
 }
+.bottom .col .heading{
+	padding: 30px 0 40px 20px;
+}
 .section-wrap.custom-brand-section{
 	padding: 12px 12px 0px 12px;
 }
