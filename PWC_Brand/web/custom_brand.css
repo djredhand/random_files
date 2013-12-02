@@ -12,6 +12,12 @@
 .col.custom-brand-bottom p{
 	color: #fff !important;
 }
+.col-4-custom-brand{
+	margin:24px 0 0 0;
+}
+.hr-custom-brand{
+	margin: 12px 0 0 0;
+}
 .bottom .col .heading{
 	padding: 30px 0 40px 20px;
 }
@@ -148,3 +154,12 @@ font.brand-cutsom-link2{
 	color: #821018 !important;
 }
 
+/*
+Videos
+*/
+.thumb-holder{
+	position: relative;
+	width: 216px;
+	height: 135px;
+	overflow: hidden;
+}
