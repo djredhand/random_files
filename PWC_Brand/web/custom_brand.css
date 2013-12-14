@@ -1,6 +1,11 @@
 .section-wrap{
 	background: #f0f0f1 !important;
 }
+#main-content{
+	float: left;
+width: 732px;
+margin: 0 12px 0 0;
+}
 .col.brand-custom{
 	width: 224px !important;
 }
