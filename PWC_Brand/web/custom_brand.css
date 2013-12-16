@@ -73,10 +73,20 @@
 	margin:7px 15px 5px 10px;
 	height:26px;
 }
+#personal-brand-workbook{
+	background: url("images/icon_sprite.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    height: 20px;
+    padding: 2px 0 4px 35px;
+}
+}
 
 /** COLORS **/
 .brand-custom .heading h2{
 	font-family: Arial, sans-serif !important;
+}
+.brand-heading h2{
+	color: #FFFFFF !important;
+    padding: 15px 0 228px 15px;
 }
 .brand-custom .heading{
 	font-family: Arial, sans-serif !important;
@@ -136,14 +146,14 @@ h2.brand-header{
 }
 
 h2.red{
-	background: url("brand-header-bg.png") #e41926 no-repeat;
+	background: url("brand-header-bg.png") #e41926 bottom left no-repeat;
 
 }
 h2.pink{
-	background: url("brand-header-bg.png") #e7335a no-repeat;
+	background: url("brand-header-bg.png") #e7335a bottom left no-repeat;
 }
 h2.orange{
-	background: url("brand-header-bg.png") #f38e02 no-repeat;
+	background: url("brand-header-bg.png") #f38e02 bottom left no-repeat;
 }
 
 h2.red-orange{
@@ -151,7 +161,7 @@ h2.red-orange{
 }
 
 h2.maroon{
-	background: url("brand-header-bg.png") #821018 no-repeat;
+	background: url("brand-header-bg.png") #821018 bottom left no-repeat;
 }
 
 .brand-inner-content p{
@@ -183,9 +193,15 @@ Videos
 	height: 135px;
 	overflow: hidden;
 }
-.thumb-holder img{
+.video-container .thumb-holder img{
 	width: 242px;
 	margin: -24px 0 0 0;
+}
+
+.video-container .thumb-holder{
+	height: 271px;
+    padding: 5px;
+    width: 474px;
 }
 .title h3{
 	text-align: center;
@@ -209,7 +225,31 @@ text-decoration: underline !important;
 .video-container.last{
 	margin: 0x;
 }
-
+div.section-link{
+	padding-right:20px; 
+}
+.section-link-wrap{
+	width: 472px !important;
+}
+.section-link h2{
+	color: #FFFFFF !important;
+    font-family: Arial !important;
+    font-size: 24px;
+    padding: 15px !important;
+}
+.section-link p{
+	color: #FFFFFF;
+    margin: -20px 0 0 18px !important;
+    padding: 0 0 35px !important;
+}
+.section-link-symbol{
+	color: #FFFFFF;
+    float: right;
+    font-family: Arial;
+    font-size: 56px;
+    font-weight: 100;
+    margin: -60px 0 0;
+}
 /* Toggle Section Styles */
 h3.brand-toggle-header{
 	font-weight: bold !important;
