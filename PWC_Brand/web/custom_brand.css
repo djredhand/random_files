@@ -1,3 +1,15 @@
+#pagetitle{
+	background:url('images/PB_header.png') no-repeat !important;
+}
+#pagetitle h2{
+	color: #fff !important;
+}
+
+#main-container #main-content .content-section .col .heading h2{
+	color:#fff !important;
+	font-family: Arial;
+	line-height: 44px;
+}
 .section-wrap{
 	background: #f0f0f1 !important;
 }
@@ -64,13 +76,13 @@
 
 /** COLORS **/
 .brand-custom .heading h2{
-	font-family: Georgia, serif !important;
+	font-family: Arial, sans-serif !important;
 }
 .brand-custom .heading{
-	font-family: Georgia, serif !important;
+	font-family: Arial, sans-serif !important;
 	background: url('news-col-bg.png');
-min-height: 286px;
-max-height: 286px;
+	min-height: 286px;
+	max-height: 286px;
 }
 .red{
 	background: #e41926;
@@ -102,6 +114,16 @@ max-height: 286px;
 	max-width: 472px;
 	padding: 0 0 10px 0;
 }
+ul.brand-ul{
+	margin:0 0 0 25px  !important;
+	padding: 0 !important;
+}
+ul.brand-ul li p{
+	font-size: 14px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
 h2.brand-header{
 	font-family: Georgia, serif !important;
 	min-height: 24px;
@@ -138,15 +160,7 @@ h2.maroon{
     margin: 10px;
     padding: 0;
  }
-.brand-inner-content ul{
-	background: #f0f0f1;
-	padding: 0 !important;
-	margin: 0 !important;
-}
-.brand-inner-content ul li{
-	list-style: none !important;
-	display: inline;
-}
+
 font.brand-cutsom-link{
 	font-weight: normal;
 	text-decoration: underline;
