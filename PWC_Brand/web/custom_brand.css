@@ -79,7 +79,10 @@
     padding: 2px 0 4px 35px;
 }
 }
-
+#custom-inner-table table{
+	color: #fff!important;
+	font-size: 14px !important;
+}
 /** COLORS **/
 .brand-custom .heading h2{
 	font-family: Arial, sans-serif !important;
@@ -102,6 +105,12 @@
 }
 .orange{
 	background: #f38e02;
+}
+.font-orange{
+	color:#f38e02;
+}
+.font-bold{
+	font-weight:bold;
 }
 
 .red-orange{
@@ -250,6 +259,14 @@ div.section-link{
     font-weight: 100;
     margin: -60px 0 0;
 }
+.custom-brand-ul{
+	margin: 0 0 0 20px!important;
+}
+.custom-brand-li{
+	font-size: 14px !important;
+	padding: 0 !important;
+}
+
 /* Toggle Section Styles */
 h3.brand-toggle-header{
 	font-weight: bold !important;
