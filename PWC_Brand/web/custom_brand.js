@@ -2,11 +2,11 @@
 var custom_brand = {
 
 	init: function(){
-		custom_brand.tab_nav();
-		custom_brand.tab_hash('#market_yourself');
+		custom_brand.tab_hash();
 		custom_brand.tab_hash_url();
 		custom_brand.brand_toggle('.brand-toggle');
 		custom_brand.column_height();
+
 	},
 
 	column_height: function(){
@@ -52,7 +52,11 @@ var custom_brand = {
 	tab_hash_url: function(hash){
 		if(!hash){
 			var hash = window.location.hash;
+			if (hash == ''){
+				hash = jQuery('a.tab-hash').eq(0).attr('href');
+			}
 		}
+		window.location.hash = hash;
 		var index = jQuery(jQuery(hash).parent().children('li')).index(jQuery(hash));
 		custom_brand.tab_nav(index);
 		jQuery(hash).trigger('click');
