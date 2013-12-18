@@ -3,8 +3,8 @@ var custom_brand = {
 
 	init: function(){
 		custom_brand.tab_nav();
-		custom_brand.tab_hash()
-		
+		custom_brand.tab_hash('#market_yourself');
+		custom_brand.tab_hash_url();
 		custom_brand.brand_toggle('.brand-toggle');
 		custom_brand.column_height();
 	},
@@ -44,12 +44,18 @@ var custom_brand = {
 
 	tab_hash: function(){
 		jQuery('a.tab-hash').click(function(){
-			var hash =jQuery(this).attr('href');
-			var index = jQuery(jQuery(hash).parent().children('li')).index(jQuery(hash));
-			custom_brand.tab_nav(index);
-			jQuery(hash).trigger('click');
-
+			var hash = jQuery(this).attr('href');
+			custom_brand.tab_hash_url(hash);
 		});
+	},
+
+	tab_hash_url: function(hash){
+		if(!hash){
+			var hash = window.location.hash;
+		}
+		var index = jQuery(jQuery(hash).parent().children('li')).index(jQuery(hash));
+		custom_brand.tab_nav(index);
+		jQuery(hash).trigger('click');
 	},
 
 	show_tab: function(index){
