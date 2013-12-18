@@ -3,6 +3,7 @@ var custom_brand = {
 
 	init: function(){
 		custom_brand.tab_nav();
+		custom_brand.tab_hash()
 		
 		custom_brand.brand_toggle('.brand-toggle');
 		custom_brand.column_height();
@@ -30,6 +31,7 @@ var custom_brand = {
 		if(tab_index == undefined){
 			tab_index = 0;
 		}
+		jQuery(tab_items).removeClass('active');
 		jQuery(tab_items[tab_index]).addClass('active');
 		jQuery('.tab-content-wrap').hide();
 		jQuery('.tab-content-wrap:eq('+ tab_index +')').show();
@@ -38,6 +40,16 @@ var custom_brand = {
 			var index = tab_items.index(jQuery(this));
 			custom_brand.show_tab(index);
 		})
+	},
+
+	tab_hash: function(){
+		jQuery('a.tab-hash').click(function(){
+			var hash =jQuery(this).attr('href');
+			var index = jQuery(jQuery(hash).parent().children('li')).index(jQuery(hash));
+			custom_brand.tab_nav(index);
+			jQuery(hash).trigger('click');
+
+		});
 	},
 
 	show_tab: function(index){
