@@ -39,7 +39,9 @@ var custom_brand = {
 			var tab_items = jQuery('.tab-content .tab-nav li');
 			var index = tab_items.index(jQuery(this));
 			custom_brand.show_tab(index);
+			jQuery(window).scrollTop(window.scroll_height);
 		})
+		
 	},
 
 	tab_hash: function(){
@@ -50,6 +52,7 @@ var custom_brand = {
 	},
 
 	tab_hash_url: function(hash){
+		window.scroll_height = jQuery(window).scrollTop();
 		if(!hash){
 			var hash = window.location.hash;
 			if (hash == ''){
