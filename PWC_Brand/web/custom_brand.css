@@ -126,6 +126,37 @@
 .col-red-orange{
 	color: #eb6409;
 }
+
+/* Custom Mixin */
+.custom-brand-hz-spacer{
+	height: 25px;
+	width: 100px;
+}
+.custom-brand-inline-float-rt{
+	float: right;
+    padding: 0 15px 0 0;
+    width: 240px;
+}
+.custom-brand-inline-float-left{
+	float: left;
+    margin: -5px 0 0;
+    padding: 0 0 0 35px;
+    width: 340px
+}
+.custom-brand-inline-float-left p.font-bold,
+.custom-brand-inline-float-rt p.font-bold{
+    font-family: Georgia;
+    font-size: 18px !important;
+    font-style: italic;
+    margin: 0 0 0 -20px;
+}
+.custom-brand-inline-float-left p.font-bold{
+	font-style:  normal;
+	font-size: 15px !important;
+    line-height: 14px !important;
+    margin-bottom: 10px;
+}
+
 .brand-inner-content{
  width:484px;
 }
@@ -258,6 +289,13 @@ div.section-link{
     font-size: 56px;
     font-weight: 100;
     margin: -60px 0 0;
+}
+ol.custom-brand-ol{
+	list-style:decimal outside !important;
+}
+ol.custom-brand-ol li{
+	display: list-item!important;
+	overflow: visible!important;
 }
 .custom-brand-ul{
 	margin: 0 0 0 20px!important;
