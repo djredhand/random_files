@@ -186,7 +186,9 @@ h2.brand-header{
 	font-size: 14px;
 	width: 460px;
 }
-
+h2.brand-header.red{
+	margin-top: 20px!important;
+}
 h2.red{
 	background: url("brand-header-bg.png") #e41926 bottom left no-repeat;
 
@@ -305,6 +307,9 @@ ol.custom-brand-ol li{
 .custom-brand-li{
 	font-size: 14px !important;
 	padding: 0 !important;
+}
+ul.custom-linked-in{
+	margin: 0 0 0 -45px!important;
 }
 
 /* Toggle Section Styles */
