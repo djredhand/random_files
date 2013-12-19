@@ -109,6 +109,9 @@
 .font-orange{
 	color:#f38e02;
 }
+.font-orange.font-bold{
+	margin-bottom: 0px!important;
+}
 .font-bold{
 	font-weight:bold;
 }
