@@ -108,19 +108,22 @@ var custom_brand = {
 
 	brand_links:function(){
 		jQuery('#section-link-get-started').parent().click(function(){
-			window.location.hash = '';
-			window.location = window.location + '#get_started';
+			jQuery('#get_started').trigger('click');
+			custom_brand.tab_nav(1);
+			window.location.hash = '#get_started';
 		});
 
 		jQuery('#section-link-make-your-plan').parent().click(function(){
-			window.location.hash = '';
-			window.location = window.location + '#make_your_plan';
+			jQuery('#make_your_plan').trigger('click');
+			custom_brand.tab_nav(2);
+			window.location.hash = '#make_your_plan';
 
 		});
 
 		jQuery('#section-link-market-yourself').parent().click(function(){
-			window.location.hash = '';
-			window.location = window.location + '#market_yourself';
+			jQuery('#market_yourself').trigger('click');
+			custom_brand.tab_nav(3);
+			window.location.hash = '#market_yourself';
 
 		});
 	}
