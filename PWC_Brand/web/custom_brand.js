@@ -6,6 +6,7 @@ var custom_brand = {
 		custom_brand.tab_hash_url();
 		custom_brand.brand_toggle('.brand-toggle');
 		custom_brand.column_height();
+		custom_brand.brand_links();
 
 	},
 
@@ -103,6 +104,25 @@ var custom_brand = {
 		})
 
 
+	},
+
+	brand_links:function(){
+		jQuery('#section-link-get-started').parent().click(function(){
+			window.location.hash = '';
+			window.location = window.location + '#get_started';
+		});
+
+		jQuery('#section-link-make-your-plan').parent().click(function(){
+			window.location.hash = '';
+			window.location = window.location + '#make_your_plan';
+
+		});
+
+		jQuery('#section-link-market-yourself').parent().click(function(){
+			window.location.hash = '';
+			window.location = window.location + '#market_yourself';
+
+		});
 	}
 }
 
