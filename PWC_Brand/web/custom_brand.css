@@ -358,3 +358,538 @@ h3.brand-toggle-header{
     margin: 0 0 3px !important;
 }
 /* End Toggle Section Styles */
+
+
+/* PWC MOBILE */
+
+html, body {
+    background-color: #FFFFFF;
+}
+body {
+    position: relative;
+}
+#wrapper {
+    padding: 0 0 10px;
+    position: relative;
+    right: 0;
+    width: auto;
+}
+:first-child + html #wrapper {
+    width: 100%;
+}
+#pwcmobile .esidesktop {
+    display: none;
+}
+#pwcmobile #homedesktop {
+    display: none;
+}
+#container {
+    clear: both !important;
+    padding: 0 5px !important;
+}
+#container .column {
+}
+#center {
+    padding: 0 !important;
+}
+#left {
+    float: left !important;
+    margin-left: 0 !important;
+    right: auto !important;
+    width: 49% !important;
+}
+* html #wrapper #container #left.column {
+    margin-left: 0 !important;
+}
+#right {
+    float: right !important;
+    margin-right: 0 !important;
+    position: relative !important;
+    width: 49% !important;
+}
+* html #left {
+    left: auto !important;
+}
+#mobilenav {
+    display: block;
+}
+#header {
+    padding: 0;
+}
+#headerleft {
+    padding-bottom: 0;
+    width: 81px;
+}
+#headerright {
+    width: 216px;
+}
+#headerlogo img {
+    display: inline-block !important;
+    height: 61px !important;
+    width: 80px !important;
+}
+#headerlogo {
+    background-image: none !important;
+    padding-left: 10px;
+}
+#mobileheaderright {
+    display: block;
+    float: left;
+    margin: 15px 4px 0 0;
+    vertical-align: top;
+}
+#headercountry {
+    font-size: 1em;
+    margin: 0;
+}
+#headercountry span {
+    margin: 0 !important;
+    width: 160px;
+}
+#headerlang {
+    margin: 0;
+}
+.langlink {
+    font-size: 1em;
+    padding-left: 4px;
+    padding-right: 1px;
+}
+#mobileheadernav {
+    display: block;
+}
+#mobileheadermenu {
+    margin-top: 5px;
+}
+#mobilenav {
+    background-color: #DC6900;
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 200px;
+}
+#mobilenav ul {
+    border-bottom: 1px solid #A64F00;
+    line-height: 1;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#mobilenav ul li {
+}
+#mobilenav ul li a {
+    border-bottom: 1px solid #F47400;
+    border-top: 1px solid #A64F00;
+    color: #FFFFFF;
+    display: block;
+    font-weight: normal;
+    line-height: 1.2em;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+#frmmobilesearch {
+    position: relative;
+}
+:first-child + html #frmmobilesearch {
+    display: inline;
+}
+#mobilesearchsubmit {
+    display: none;
+}
+#searchfield {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #939598 -moz-use-text-color #939598 #939598;
+    border-image: none;
+    border-style: solid none solid solid;
+    border-width: 1px 0 1px 1px;
+    color: #6D6E71;
+    display: none;
+    font-size: 0.95em;
+    height: 28px;
+    margin-top: 1px;
+    padding: 1px;
+    position: absolute;
+    right: 32px;
+    width: 160px;
+}
+#mobileheadersearch img, #mobilesearchsubmit, #mobileheadermenu img {
+    height: 32px;
+    width: 32px;
+}
+#mobilesearchsubmit {
+    margin-top: 1px !important;
+}
+#container {
+}
+#container img, #container object {
+    max-width: 100%;
+}
+#feature-mobilehome {
+    max-width: 640px;
+    overflow: hidden;
+    position: relative;
+}
+#feature-mobilehome .items {
+    clear: both;
+    position: relative;
+    width: 20000em;
+}
+.items div {
+    float: left;
+}
+#feature-mobilehome .items div a {
+    position: relative !important;
+    text-decoration: none !important;
+}
+#feature-mobilehome .items div a span, #feature-mobilehome span {
+    background-image: url("http://pwc.com/en_GX/webadmin/assets/image/m-linkicon.png");
+    background-position: 98% 50%;
+    background-repeat: no-repeat;
+    bottom: 3px !important;
+    color: #FFFFFF !important;
+    display: inline-block;
+    font-family: Georgia,"Times New Roman";
+    font-size: 1em !important;
+    left: 0 !important;
+    max-width: 292px !important;
+    opacity: 0.9;
+    padding: 8px 20px 8px 8px;
+    position: absolute !important;
+}
+#feature-mobilehome span.tangerine {
+    background-color: #EB8C00;
+    font-size: 1em !important;
+}
+#feature-mobilehome span.orange {
+    background-color: #DC6900;
+    font-size: 1em !important;
+}
+#feature-mobilehome span.red {
+    background-color: #E0301E;
+    font-size: 1em !important;
+}
+#feature-mobilehome span.rose {
+    background-color: #DB536A;
+    font-size: 1em !important;
+}
+#feature-mobilehome span.burgundy {
+    background-color: #A32020;
+    font-size: 1em !important;
+}
+#feature-mobilehome span.maroon {
+    background-color: #602320;
+    font-size: 1em !important;
+}
+#feature-mobilehome span.grey {
+    background-color: #968C6D;
+    font-size: 1em !important;
+}
+a.browse {
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    display: block;
+    height: 32px;
+    position: absolute;
+    top: 25%;
+    width: 32px;
+    z-index: 100;
+}
+a.left {
+    background-image: url("http://pwc.com/en_GX/webadmin/assets/image/m-feature-left.gif");
+    left: 0;
+}
+a.right {
+    background-image: url("http://pwc.com/en_GX/webadmin/assets/image/m-feature-right.gif");
+    right: 0;
+}
+#mobilehomenav {
+    list-style: none outside none !important;
+    margin: 0 !important;
+    padding: 0 5px !important;
+}
+#mobilehomenav li {
+    float: left;
+    line-height: 1 !important;
+    list-style-image: none !important;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+#mobilehomenav a {
+    border-top: 4px solid #939598;
+    color: #000000 !important;
+    display: block;
+    font-family: Georgia,"Times New Roman";
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+    height: 26px;
+    line-height: 1.2em;
+    margin: 10px 10px 0 0;
+    padding: 10px 5px;
+    text-decoration: none;
+    width: 83px;
+}
+#mobilehomenav a.selected {
+    background-color: #EB8C00;
+    border-top: 4px solid #EB8C00;
+    color: #FFFFFF !important;
+}
+#footer, #footerlinks {
+    display: none;
+}
+#footer-wrapper {
+    height: auto;
+}
+#footer-wrapper div {
+    padding: 5px;
+}
+#mobilefooter {
+    border-top: 4px solid #EB8C00;
+    margin-top: 10px;
+}
+#mobileterritory, #translation {
+    font-size: 0.85em !important;
+    font-weight: bold;
+    margin: 0;
+    padding: 2px 0 !important;
+}
+#translation a {
+    padding-left: 5px;
+}
+#mobileterritory a, #translation a {
+    font-weight: normal;
+}
+#mobileterritory .mobilechange {
+    background-color: #EB8C00;
+    color: #FFFFFF !important;
+    margin-left: 5px;
+    padding: 2px 8px;
+    text-decoration: none;
+}
+#mobilecopyright {
+    font-size: 0.85em;
+    padding-left: 0 !important;
+}
+#mobilecopyright div {
+    padding: 0 !important;
+}
+.truncate_more_link {
+    color: #EB8C00 !important;
+    padding-left: 4px;
+}
+#mobilecopyright span {
+    display: none;
+}
+#mobilecopyright ul {
+    line-height: 1;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#mobilecopyright ul li {
+    float: left;
+    text-align: left;
+}
+#mobilecopyright ul li a {
+    display: block;
+    font-weight: normal;
+    padding: 5px 8px 5px 0;
+    text-decoration: none;
+}
+#mobilecopyright ul li a, #mobileterritory a, #translation a, #mobilecopyright a {
+    color: #404041;
+    text-decoration: underline;
+}
+.clearboth {
+    display: inline-block;
+}
+.tooltip {
+    width: 150px;
+}
+.tooltipbottom {
+    width: 190px;
+}
+.fullcontent, .halfcontent, .homecolumn, .contentfeature, .homeleft {
+    display: block;
+    float: none;
+    width: 100%;
+}
+.matchheight {
+    height: auto !important;
+}
+.expander {
+    width: 100%;
+}
+.expander.homecenter {
+    width: 100%;
+}
+.landing-mobile-1 .contentfeature {
+    clear: left;
+    width: 100% !important;
+}
+.landwrappermobile {
+    visibility: visible !important;
+}
+#promocarousel1 {
+    position: static;
+    width: 100%;
+}
+#promocarousel2 {
+    position: static;
+    width: 100%;
+}
+#promofeatures {
+    float: none;
+    width: 100%;
+}
+#promocarousel2 #promofeatures {
+    width: 100%;
+}
+#promopanels {
+    float: none;
+    width: 100%;
+}
+#promocarousel2 #promopanels {
+    width: 100%;
+}
+#promopanels ul li a {
+    padding: 5px;
+}
+#promopanels ul.fivepanels li a {
+}
+#homelayoutwide {
+    width: 100%;
+}
+#homelayout2col {
+    width: 100%;
+}
+#promostatic {
+    width: 100%;
+}
+#homelayout2col #promostatic {
+    width: 100%;
+}
+#pwcmobile #center ul {
+}
+#pwcmobile #center a {
+    text-decoration: underline;
+}
+.leftnav a:link, .leftnav a:visited {
+    color: #404041;
+}
+.leftnav #selected .lhnentry {
+    background-color: #F5F4F0;
+    background-image: none;
+}
+#landingwrapper .leftnav {
+    display: none;
+}
+#lhnlayout {
+    margin-left: 0 !important;
+}
+#landingwrapper, #lhnlayout, .searchresulttop, .searchresultfeaturedarea, .searchresultpagination {
+    width: 100% !important;
+}
+#pwcmobile #media-player video {
+    height: 280px !important;
+    width: 280px !important;
+}
+#pwcmobile #media-details {
+    height: auto !important;
+    width: 280px !important;
+}
+#pwcmobile ul.media-tabs {
+    display: table;
+}
+#pwcmobile ul.media-tabs li, #pwcmobile ul.media-tabs-doubleheight li {
+    display: inline-block;
+    float: none;
+    margin: 0 1px 5px 0 !important;
+}
+#pwcmobile ul.media-tabs-doubleheight {
+    height: auto;
+}
+#pwcmobile ul.media-tabs a, #pwcmobile #center ul.media-tabs a, #pwcmobile ul.media-tabs a:visited, #pwcmobile #center ul.media-tabs a:visited {
+    padding: 5px;
+}
+#pwcmobile ul.media-tabs-doubleheight a, #pwcmobile #center ul.media-tabs-doubleheight a, #pwcmobile ul.media-tabs-doubleheight a:visited, #pwcmobile #center ul.media-tabs-doubleheight a:visited {
+    padding: 5px;
+}
+#pwcmobile ul.media-tabs a.current, #pwcmobile ul.media-tabs a.current:hover, #pwcmobile ul.media-tabs li.current a, #pwcmobile ul.media-tabs-doubleheight a.current, #pwcmobile ul.media-tabs-doubleheight a.current:hover, #pwcmobile ul.media-tabs-doubleheight li.current a, #pwcmobile #center ul.media-tabs a.current, #pwcmobile #center ul.media-tabs a.current:hover, #pwcmobile #center ul.media-tabs li.current a, #pwcmobile #center ul.media-tabs-doubleheight a.current, #pwcmobile #center ul.media-tabs-doubleheight a.current:hover, #pwcmobile #center ul.media-tabs-doubleheight li.current a, #pwcmobile ul.media-tabs a.current:visited, #pwcmobile ul.media-tabs li.current a:visited, #pwcmobile #center ul.media-tabs a.current:visited, #pwcmobile #center ul.media-tabs li.current a:visited, #pwcmobile ul.media-tabs-doubleheight a.current:visited, #pwcmobile ul.media-tabs-doubleheight li.current a:visited, #pwcmobile #center ul.media-tabs-doubleheight a.current:visited, #pwcmobile #center ul.media-tabs-doubleheight li.current a:visited {
+    padding: 5px 4px;
+}
+#pwcmobile .media-feature-images {
+    position: relative;
+    width: auto;
+}
+#pwcmobile .media-feature-images .media-feature-slide {
+    height: auto;
+    width: 100%;
+}
+#pwcmobile .media-feature-slide {
+    height: auto;
+    width: auto;
+}
+#pwcmobile .media-feature-slide img {
+    width: 100% !important;
+}
+#pwcslider {
+    height: auto !important;
+    width: 100% !important;
+}
+#pwcslider .items, #pwcsliderauto .items {
+    clear: none;
+    position: relative;
+    width: 100%;
+}
+#pwcslider .items .feature, #pwcsliderauto .items .feature {
+    float: none;
+    padding: 0;
+}
+#pwcslider a.browse, #pwcsliderauto a.browse {
+    display: none;
+}
+#pwcslider .navi, #pwcsliderauto .navi {
+    display: none;
+}
+#pwcslider .feature.cloned {
+    display: none;
+}
+#pwcslider .feature {
+    border-bottom: 1px solid #6D6E71;
+    height: inherit !important;
+    padding-bottom: 10px !important;
+}
+#pwcslider .feature a.griditem {
+    float: none;
+    height: 125px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+#pwcslider .feature .gridgutter {
+    display: none;
+}
+#home #feature, #home .gx_anim_animationcontainer {
+    display: none !important;
+}
+#pubfeature {
+    width: 150px;
+}
+.pubdownload {
+    padding: 5px;
+}
+.pubdownload a {
+    background-image: none;
+    font-size: 1em;
+    padding-right: 0;
+}
+.media-overlay {
+    height: auto !important;
+    width: 280px !important;
+}
