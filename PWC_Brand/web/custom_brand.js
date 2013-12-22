@@ -129,6 +129,7 @@ var custom_brand = {
 		});
 	},
 	mobile: function(){
+		alert(jQuery(window).width());
 		if(jQuery(window).width() < 321){
 			custom_brand.use_mobile();
 		}
