@@ -7,6 +7,7 @@ var custom_brand = {
 		custom_brand.brand_toggle('.brand-toggle');
 		custom_brand.column_height();
 		custom_brand.brand_links();
+		custom_brand.mobile();
 
 	},
 
@@ -126,6 +127,18 @@ var custom_brand = {
 			window.location.hash = '#market_yourself';
 
 		});
+	},
+	mobile: function(){
+		if(jQuery(window).width() < 321){
+			custom_brand.use_mobile();
+		}
+	},
+	use_mobile:function(){
+		alert('mobile');
+		jQuery.getScript('http://pwc.com/en_GX/webadmin/assets/script/m.js',function(){
+			alert('loading');
+		});
+		$('head').append('<link rel="stylesheet" type="text/css" href="custom_brand_mobile.css">');
 	}
 }
 
