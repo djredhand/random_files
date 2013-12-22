@@ -5,6 +5,25 @@
 .desktop{
     display: none!important;
 }
+
+#wrapper {
+    padding: 0!important;
+    width: 330px;
+}
+#container{
+        padding: 0!important;
+}
 #main-container #pagetitle h2{
     color: #FF0!important;
+}
+#center #main-container .tab-content .tab-nav ul li{
+    width: 80px!important;
+}
+
+#center #main-container .tab-content .tab-nav ul li a{
+    padding: 15px 10px 13px 9px;
+    min-height: 30px;
+}
+#mobilenav{
+    width: 161px!important;
 }
