@@ -9,12 +9,12 @@ window.mobilecheck = function() {
 var custom_brand = {
 
 	init: function(){
+		custom_brand.mobile();
 		custom_brand.tab_hash();
 		custom_brand.tab_hash_url();
 		custom_brand.brand_toggle('.brand-toggle');
-		custom_brand.column_height();
 		custom_brand.brand_links();
-		custom_brand.mobile();
+		
 
 	},
 
@@ -30,9 +30,6 @@ var custom_brand = {
 			})
 			window.col = c;
 		})
-		
-		
-		 
 	},
 
 	tab_nav: function(tab_index){
@@ -78,7 +75,9 @@ var custom_brand = {
 		jQuery('.tab-content-wrap').hide()
 		var tab = jQuery(jQuery('.tab-content-wrap')[index]);
 		tab.show();
-		custom_brand.column_height();
+		if(!(jQuery(window).width() < 321 || !window.mobilecheck() || !window.location.search.replace( "?", "" ).split('=')[1] ==1)){
+			custom_brand.column_height();
+		}
 	},
 
 	brand_toggle:function(el){
@@ -99,7 +98,9 @@ var custom_brand = {
 						toggle_symbol.removeClass('mdash').addClass('plus');
 						content.hide();
 					}
-					custom_brand.column_height()
+					if(!(jQuery(window).width() < 321 || !window.mobilecheck() || !window.location.search.replace( "?", "" ).split('=')[1] ==1)){
+						custom_brand.column_height()
+					}
 				});
 
 			}
@@ -138,6 +139,8 @@ var custom_brand = {
 	mobile: function(){
 		if(jQuery(window).width() < 321 || window.mobilecheck() || window.location.search.replace( "?", "" ).split('=')[1] ==1){
 			custom_brand.use_mobile();
+		}else{
+			custom_brand.column_height();
 		}
 	},
 	use_mobile:function(){
@@ -146,6 +149,22 @@ var custom_brand = {
 		});
 		$('head').append('<link rel="stylesheet" type="text/css" href="http://pwc.com/en_GX/webadmin/assets/style/m.css">');
 		$('head').append('<link rel="stylesheet" type="text/css" href="custom_brand_mobile.css">');
+
+		jQuery('.col.brand-custom').each(function(){
+			var col = jQuery(this);
+			col.css({
+				float:'left'
+			})
+			col.after('<div style="clear:left;width:200px;"></div>');
+		})
+
+		jQuery('.thumb-holder iframe').each(function(){
+			var vid = jQuery(this);
+			vid.css({
+				width:'319px'
+			})
+		})
+
 	}
 }
 
