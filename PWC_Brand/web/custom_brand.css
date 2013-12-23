@@ -363,3 +363,6 @@ h3.brand-toggle-header{
 	display: none;
 }
 
+.col.brand-custom.make-your-plan{
+	min-height: 300px;
+}
