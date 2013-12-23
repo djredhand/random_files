@@ -9,6 +9,7 @@
 #wrapper {
     padding: 0!important;
     width: 330px;
+    margin: 0!important;
 }
 #container{
         padding: 0!important;
@@ -25,5 +26,6 @@
     min-height: 30px;
 }
 #mobilenav{
-    width: 161px!important;
+    left: 0;
+    margin: 0 0 0 130px;
 }

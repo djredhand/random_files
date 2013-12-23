@@ -136,7 +136,7 @@ var custom_brand = {
 		});
 	},
 	mobile: function(){
-		if(jQuery(window).width() < 321 || window.mobilecheck() ){
+		if(jQuery(window).width() < 321 || window.mobilecheck() || window.location.search.replace( "?", "" ).split('=')[1] ==1){
 			custom_brand.use_mobile();
 		}
 	},
