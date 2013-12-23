@@ -98,9 +98,7 @@ var custom_brand = {
 						toggle_symbol.removeClass('mdash').addClass('plus');
 						content.hide();
 					}
-					if(!(jQuery(window).width() < 321 || !window.mobilecheck() || !window.location.search.replace( "?", "" ).split('=')[1] ==1)){
-						custom_brand.column_height()
-					}
+					custom_brand.column_height()
 				});
 
 			}
