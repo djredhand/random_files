@@ -9,12 +9,12 @@ window.mobilecheck = function() {
 var custom_brand = {
 
 	init: function(){
-		custom_brand.mobile();
+		
 		custom_brand.tab_hash();
 		custom_brand.tab_hash_url();
 		custom_brand.brand_toggle('.brand-toggle');
 		custom_brand.brand_links();
-		
+		custom_brand.mobile();
 
 	},
 
