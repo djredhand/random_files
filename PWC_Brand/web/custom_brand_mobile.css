@@ -14,16 +14,15 @@
 #container{
         padding: 0!important;
 }
-#main-container #pagetitle h2{
-    color: #FF0!important;
-}
+
 #center #main-container .tab-content .tab-nav ul li{
     width: 80px!important;
 }
 
-#center #main-container .tab-content .tab-nav ul li a{
-    padding: 15px 10px 13px 9px;
+#center #main-container .tab-content .tab-nav ul li a {
+    font-size: 13px;
     min-height: 30px;
+    padding: 8px 10px 7px 9px;
 }
 #mobilenav{
     left: 0;
@@ -66,4 +65,31 @@ h2.brand-header{
 
 #container img, #container object {
     max-width: 330px!important;
+}
+
+.col.brand-custom.make-your-plan{
+    min-height: 250px;
+}
+
+#pagetitle {
+    background-position: -447px!important;
+}
+#main-container #pagetitle h2 {
+    color: #FFFFFF;
+    font-size: 25px!important;
+    font-style: italic;
+    margin: 0 0 0 130px;
+    text-align: left;
+    width: 200px;
+}
+
+#pwcmobile #center a {
+    text-decoration: none!important;
+}
+
+
+#main-container #main-content .content-section .col .heading h2 {
+    font-size: 30px !important;
+    line-height: 33px;
+    padding: 10px;
 }
