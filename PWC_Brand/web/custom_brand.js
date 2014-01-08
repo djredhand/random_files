@@ -19,7 +19,6 @@ var custom_brand = {
 	},
 
 	column_height: function(){
-		
 		var col = jQuery('.col.brand-custom');
 		col.each(function(){
 			var c = jQuery(this);
@@ -75,8 +74,9 @@ var custom_brand = {
 		jQuery('.tab-content-wrap').hide()
 		var tab = jQuery(jQuery('.tab-content-wrap')[index]);
 		tab.show();
-		if(!(jQuery(window).width() < 321 || !window.mobilecheck() || !window.location.search.replace( "?", "" ).split('=')[1] ==1)){
+		if( !window.mobilecheck()){
 			custom_brand.column_height();
+			//console.log('not mobile')
 		}
 	},
 
