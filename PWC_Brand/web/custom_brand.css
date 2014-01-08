@@ -317,11 +317,12 @@ ul.custom-linked-in{
 }
 
 /* Toggle Section Styles */
-h3.brand-toggle-header{
-	font-weight: bold !important;
-	color: #E41926 !important;
-	font-size: 18px;
-	cursor: pointer;
+h3.brand-toggle-header {
+    color: #E41926 !important;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold !important;
+    margin: 0 0 0 20px;
 }
 .toggle-symbol{
 	float: left;
@@ -330,12 +331,12 @@ h3.brand-toggle-header{
     font-weight: bold;
 }
 
-.toggle-symbol.mdash{
-	margin: -3px 5px 0 15px;
+.toggle-symbol.mdash {
+    margin: -4px 5px 0 -25px;
 }
 
-.toggle-symbol.plus{
-	margin: -3px 5px 0 10px;
+.toggle-symbol.plus {
+    margin: -3px 5px 0 -20px;
 }
 .plus:after{
 	content: '+';
@@ -358,3 +359,8 @@ h3.brand-toggle-header{
     margin: 0 0 3px !important;
 }
 /* End Toggle Section Styles */
+
+.mobile{
+	display: none;
+}
+

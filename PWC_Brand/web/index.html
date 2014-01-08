@@ -4,6 +4,7 @@
 <head>
 	<title>PwC's student careers Website: On Campus newsletter</title>
     <!-- Page Metadata -->
+    <meta id="pwcviewport" content="width=device-width,minimum-scale=1,maximum-scale=1" name="viewport">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="content-language" content="en-us" />
 	<meta http-equiv="Last-Modified" content="Fri Sep 20 20:25:42 EDT 2013" />
@@ -110,30 +111,45 @@ h1 {display:none;}
 	<!-- All JavaScript at the bottom, except this Modernizr build.
 	     Modernizr enables HTML5 elements & feature detects for optimal performance.
 	     Create your own custom Modernizr build: www.modernizr.com/download/ -->
-	
-	<script src="http://www.pwc.com/us/en/careers/campus/assets/js/libs/modernizr-2.5.3.min.js"></script>
 <!-- CUSTOM NEWS ACCORDION-->
+	
 	<script src="http://www.pwc.com/us/en/careers/campus/assets/js/libs/modernizr-2.5.3.min.js"></script>
 	<script src="custom_brand.js"></script>
 	<link rel="stylesheet" href="custom_brand.css">
+
 <!-- END CUSTOM NEWS ACCORDION -->
 
 </head>
 
 
-<body id="pwcdesktop" onload="addscript();">
-
-	
+<body id="pwcmobile" onload="addscript();">
+<div id="mobilenav" class="mobile">
+	<ul>
+		<li><a href="/us/en/index.jhtml">Home</a></li>
+		<li><a href="/us/en/issues/current-issues.jhtml">Business issues</a></li>
+		<li><a href="/us/en/services/index.jhtml">Services</a></li>
+		<li><a href="/us/en/industry/index.jhtml">Industries</a></li>
+		<li><a href="/us/en/publications/index.jhtml">Research &amp; insights</a></li>
+		<li><a href="/us/en/press-releases/index.jhtml">Press room</a></li>
+		<li><a href="/us/en/open-university/index.jhtml">Open University</a></li>
+		<li><a href="/us/en/about-us/index.jhtml">About us</a></li>
+		<li><a href="/gx/en/office-locations/usa-by-city.jhtml">US offices</a></li>
+		<li><a href="/en_GX/webadmin/forms/contactUs.jhtml?CIF=CU&amp;localeOverride=en_US&amp;C=US&amp;L=en">Contact us</a></li>
+		<li><a href="/us/en/careers/index.jhtml">Careers</a></li>
+		<li><a href="/us/en/alumni/index.jhtml">Alumni</a></li>
+	</ul>
+</div>
 
       
         <div id="wrapper">
             <!-- START Header -->
             <layout_html xmlns:esi="http://www.edge-delivery.org/esi/1.0">
-<div id="header"><!-- START Header --><!-- Logo, country & languages -->
-<div id="headerleft"><div style="display: none;">Saturday September 21, 2013</div>
+
+<div id="header" class="desktop"><!-- START Header --><!-- Logo, country & languages -->
+<div id="headerleft"><div style="display: none;">Sunday December 22, 2013</div>
 <div id="headerlogo">
-	<a href="http://www.pwc.com/us/en/">
-		<img src="http://www.pwc.com/en_GX/webadmin/assets/image/pwclogo.gif" alt="PwC logo" border="0" width="94" height="72" />
+	<a href="http://pwc.com/us/en/">
+		<img height="72" border="0" width="94" alt="PwC logo" src="http://pwc.com/en_GX/webadmin/assets/image/pwclogo.gif">
 	</a>
 </div></div>
 
@@ -143,19 +159,19 @@ h1 {display:none;}
 	
 	
 		
-	<div class="yui-skin-sam"><br/>
+	<div class="yui-skin-sam"><br>
 	<div id="searchbox">
-	<form action="http://searchus.pwc.com" id="frmsearch" method="get" name="frmsearch">
+	<form name="frmsearch" method="get" id="frmsearch" action="http://searchus.pwc.com">
 	<div id="headercountry"><span>United States</span></div>
-	<label for="searchfield"><img alt="Search" border="0" height="1" src="http://www.pwc.com/en_GX/webadmin/assets/image/tran.gif" width="1"/></label> <input accesskey="4" id="searchfield" name="q" onfocus="clearsearch(); return false;" onkeyup="showResult(this.value);" size="30" type="text" value=""/><a href="http://www.pwc.com#" onclick="clearlivesearch(); return false;" title=""><img alt="" border="0" id="livesearchbutton" src="http://www.pwc.com/en_GX/webadmin/assets/image/tran.gif"/></a><input alt="Search" id="searchsubmit" name="searchsubmit" src="http://www.pwc.com/en_GX/webadmin/assets/image/searchsubmit.gif" type="image"/><br/>
-	<a href="http://www.pwc.com#" onclick="clearlivesearch(); return false;" title=""><img alt="" border="0" id="livesearchbutton" src="http://www.pwc.com/en_GX/webadmin/assets/image/tran.gif"/></a>
+	<label for="searchfield"><img height="1" border="0" width="1" src="http://pwc.com/en_GX/webadmin/assets/image/tran.gif" alt="Search"></label> <input type="text" value="" size="30" onkeyup="showResult(this.value);" onfocus="clearsearch(); return false;" name="q" id="searchfield" accesskey="4"><a title="" onclick="clearlivesearch(); return false;" href="#"><img border="0" src="http://pwc.com/en_GX/webadmin/assets/image/tran.gif" id="livesearchbutton" alt=""></a><input type="image" src="http://pwc.com/en_GX/webadmin/assets/image/searchsubmit.gif" name="searchsubmit" id="searchsubmit" alt="Search"><br>
+	<a title="" onclick="clearlivesearch(); return false;" href="#"><img border="0" src="http://pwc.com/en_GX/webadmin/assets/image/tran.gif" id="livesearchbutton" alt=""></a>
 	<div id="livesearch"> </div>
 	</form>
 	</div>
-	<br/>
-	<div id="headerlang"><a accesskey="3" href="http://www.pwc.com/gx/en/site-index.jhtml" id="intllink">International PwC Sites</a></div>
+	<br>
+	<div id="headerlang"><a id="intllink" href="#" accesskey="3">International PwC Sites</a></div>
 	</div>
-	<div id="popupclose">Click the 'X' in the top right corner to close this window.</div>
+	<div id="popupclose"><a onclick="window.close();" target="_self" href="#">close window <img border="0" alt="close window" src="http://pwc.com/en_GX/webadmin/assets/image/icon_close.gif"></a></div>
 		
 
 </div>
@@ -165,110 +181,204 @@ h1 {display:none;}
 	<!-- Primary navigation --><noindex>
 <div id="navblock">
     <ul id="nav">
-	<li class="navsingle nav0"><a  href="http://www.pwc.com/us/en/careers/campus/index.jhtml"   class="navstaticlink">Home</a>
+	<li class="navsingle nav0" id="navselected"><a class="navstaticlink" href="http://pwc.com/us/en/index.jhtml">Home</a>
 	</li>
-	<li class="navsingle nav1"><a  href="http://www.pwc.com/us/en/careers/campus/why-pwc/index.jhtml"  >Why PwC</a>
-		<ul>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/why-pwc/our-culture.jhtml"   >Our culture</a>
-	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/why-pwc/our-people.jhtml"   >Our people</a>
-	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/why-pwc/career-growth.jhtml"   >Career growth</a>
-	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/why-pwc/corporate-responsibility.jhtml"   >Corporate responsibility</a>
-	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/why-pwc/employee-benefits.jhtml"   >Employee benefits</a>
-	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/why-pwc/firm-facts.jhtml"   >Firm facts</a>
-	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/why-pwc/markets.jhtml"   >Our offices</a>
-			</li>
-		</ul>
-        </li>
-	<li class="nav2"><a  href="http://www.pwc.com/us/en/careers/campus/programs-events/index.jhtml"  >Programs and events</a>
+	<li class="nav1"><a href="http://pwc.com/us/en/issues/current-issues.jhtml">Global Business issues</a>
 		<ul class="navcol1">
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/programs-events/calendar.jhtml"   >Calendar</a>
+			<li><a href="http://pwc.com/us/en/issues/current-issues.jhtml">Global Megatrends</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/programs-events/live-chat.jhtml"   >Live chats</a>
+			<li><a href="http://pwc.com/us/en/thought-leadership/governance.jhtml">Governance</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/programs-events/pwc-open-university.jhtml"   >PwC Open University</a>
+			<li><a href="http://pwc.com/us/en/thought-leadership/operations.jhtml">Operations</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/internships/index.jhtml"   >Advance</a>
+			<li><a href="http://pwc.com/us/en/thought-leadership/technology-innovation.jhtml">Innovation and technology</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/programs-events/personal-brand/index.jhtml"   >Personal brand</a>
-	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/programs-events/elevate.jhtml"   >Elevate</a>
+			<li><a href="http://pwc.com/us/en/thought-leadership/risk.jhtml">Risk</a>
 	</li>
 </ul>
 <ul class="navcol2">
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/programs-events/explore.jhtml"   >Explore</a>
+			<li><a href="http://pwc.com/us/en/thought-leadership/regulation.jhtml">Regulation</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/programs-events/launch.jhtml"   >Launch</a>
+			<li><a href="http://pwc.com/us/en/thought-leadership/sustainability.jhtml">Sustainability</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/programs-events/start.jhtml"   >Start</a>
+			<li><a href="http://pwc.com/us/en/business-strategy/customer-experience-consulting.jhtml">Strategy and Growth</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/programs-events/challenge.jhtml"   >Challenge</a>
-	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/programs-events/china-sourcing-initiative.jhtml"   >China Sourcing Initiative</a>
+			<li><a href="http://pwc.com/us/en/business-strategy/talent-workforce-management.jhtml">Talent</a>
 			</li>
 		</ul>
         </li>
-	<li id="navselected"  class="navsingle nav3"><a  href="http://www.pwc.com/us/en/careers/campus/brand-media/index.jhtml"  >News and media</a>
-		<ul>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/brand-media/newsletter.jhtml"   >Current newsletter issue</a>
+	<li class="nav2"><a href="http://pwc.com/us/en/services/index.jhtml">Services</a>
+		<ul class="navcol1">
+			<li><a href="http://pwc.com/us/en/services/index.jhtml">All services</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/brand-media/newsletter-archive.jhtml"   >Newsletter archive</a>
+			<li><a href="http://pwc.com/us/en/audit-assurance-services/index.jhtml">Audit &amp; assurance</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/brand-media/webcasts.jhtml"   >Webcasts</a>
+			<li><a href="http://pwc.com/us/en/advisory-services/index.jhtml">Consulting</a>
 	</li>
-			<li><a  href="http://www.pwc.comhttp://www.youtube.com/user/PwC/home"  target="_blank"   >Video gallery</a>
+			<li><a href="http://pwc.com/us/en/transaction-services/index.jhtml">Deals</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/forensic-services/index.jhtml">Forensic Services</a>
+	</li>
+</ul>
+<ul class="navcol2">
+			<li><a href="http://pwc.com/us/en/risk-assurance-services/index.jhtml">Risk assurance</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/hr-management/index.jhtml">Human resource services</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/issues/ifrs-reporting/index.jhtml">IFRS reporting</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/private-company-services/index.jhtml">Private company services</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/tax-services/index.jhtml">Tax services</a>
 			</li>
 		</ul>
         </li>
-	<li class="navsingle nav4"><a  href="http://www.pwc.com/us/en/careers/campus/internships/index.jhtml"  >Getting the internship</a>
-		<ul>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/internships/interview-preparation.jhtml"   >Preparing for interviews</a>
+	<li class="nav3"><a href="http://pwc.com/us/en/industry/index.jhtml">Industries</a>
+		<ul class="navcol1">
+			<li><a href="http://pwc.com/us/en/industry/index.jhtml">All industries</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/internships/shadowing-experience.jhtml"   >USLT Shadow Experience</a>
+			<li><a href="http://pwc.com/us/en/asset-management/investment-management/index.jhtml">Asset management</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/internships/international-intern-experience.jhtml"   >International Intern Experience</a>
+			<li><a target="_blank" href="/gx/en/automotive/index.jhtml">Automotive</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/internships/project-belize.jhtml"   >Project Belize</a>
+			<li><a href="http://pwc.com/us/en/banking-capital-markets/index.jhtml">Banking &amp; capital markets</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/internships/make-the-most-of-your-internship.jhtml"   >Making the most of your internship</a>
+			<li><a href="http://pwc.com/us/en/industry/communications/index.jhtml">Communications</a>
+	</li>
+			<li><a target="_blank" href="/gx/en/energy-utilities-mining/index.jhtml">Energy &amp; mining</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/industry/entertainment-media/index.jhtml">Entertainment &amp; media</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/financial-services/index.jhtml">Financial services</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/health-industries/index.jhtml">Health industries</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/health-industries/payers/index.jhtml">Healthcare payers</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/health-industries/providers/index.jhtml">Healthcare providers<br><br><br></a>
+	</li>
+</ul>
+<ul class="navcol2">
+			<li><a href="http://pwc.com/us/en/asset-management/hospitality-leisure/index.jhtml">Hospitality &amp; leisure</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/industrial-products/index.jhtml">Industrial products</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/insurance/index.jhtml">Insurance</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/law-firms/index.jhtml">Law firm services</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/health-industries/pharma-life-sciences/index.jhtml">Pharmaceuticals &amp; life science</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/power-and-utilities/index.jhtml">Power &amp; Utilities</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/private-company-services/index.jhtml">Private company industries</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/private-equity/index.jhtml">Private equity</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/public-sector/index.jhtml">Public sector</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/retail-consumer/index.jhtml">Retail &amp; consumer</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/technology/index.jhtml">Technology</a>
 			</li>
 		</ul>
         </li>
-	<li class="navsingle nav5"><a  href="http://www.pwc.com/us/en/careers/campus/recruiting/index.jhtml"   class="navstaticlink">Recruiting process</a>
+	<li class="nav4"><a href="http://pwc.com/us/en/publications/research-and-insights.jhtml">Research &amp; insights</a>
+		<ul class="navcol1">
+			<li><a href="http://pwc.com/us/en/publications/research-and-insights.jhtml">All research &amp; insights</a>
 	</li>
-	<li class="navsingle nav6"><a  href="http://www.pwc.com/us/en/careers/campus/why-pwc/what-we-do.jhtml"  >What we do</a>
-		<ul>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/why-pwc/what-we-do-advisory.jhtml"   >Advisory</a>
+			<li><a href="http://pwc.com/us/en/multimedia/index.jhtml">Video library</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/why-pwc/what-we-do-assurance.jhtml"   >Assurance</a>
+			<li><a href="http://pwc.com/us/en/10minutes/index.jhtml">10Minutes</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/why-pwc/what-we-do-pcs.jhtml"   >PCS</a>
+			<li><a href="http://pwc.com/us/en/technology-innovation-center/index.jhtml">Center for Technology and Innovation</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/why-pwc/what-we-do-public-sector.jhtml"   >Public Sector Practice</a>
+			<li><a href="http://pwc.com/us/en/financial-services/research-institute/index.jhtml">Financial Services Institute</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/why-pwc/what-we-do-tax.jhtml"   >Tax</a>
+			<li><a href="http://pwc.com/us/en/technology/publications/index.jhtml">Technology Institute<br><br></a>
+	</li>
+</ul>
+<ul class="navcol2">
+			<li><a href="http://pwc.com/us/en/health-industries/health-research-institute/index.jhtml">Health Research Institute</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/pwc-investor-resource-institute/index.jhtml">PwC's Investor Resource Institute</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/point-of-view/index.jhtml">Point of view</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/view/index.jhtml">View</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/cfodirect/index.jhtml">CFOdirect: Making insights easier</a>
 			</li>
 		</ul>
         </li>
-	<li class="navsingle nav7"><a  href="http://www.pwc.com/us/en/careers/campus/mba/index.jhtml"  >MBA</a>
-		<ul>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/mba/opportunities.jhtml"   >Opportunities for MBAs</a>
+	<li class="nav5"><a href="http://pwc.com/us/en/about-us/index.jhtml">About us</a>
+		<ul class="navcol1">
+			<li><a href="http://pwc.com/us/en/about-us/index.jhtml">About us</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/internships/interview-preparation.jhtml"   >Preparing for interviews</a>
+			<li><a href="http://pwc.com/us/en/alumni/index.jhtml">Alumni</a>
 	</li>
-			<li><a  href="http://www.pwc.com/us/en/careers/campus/mba/calendar.jhtml"   >Calendar</a>
+			<li><a href="http://pwc.com/us/en/about-us/pwc-awards.jhtml">Awards</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/about-us/corporate-responsibility/index.jhtml">Corporate responsibility</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/about-us/diversity/index.jhtml">Diversity</a>
+	</li>
+</ul>
+<ul class="navcol2">
+			<li><a href="http://pwc.com/us/en/innovation/index.jhtml">Innovation</a>
+	</li>
+			<li><a target="_blank" href="http://www.pwc.com/gx/en/index.jhtml?ld=no">Our global site</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/press-releases/index.jhtml">Press room</a>
+	</li>
+			<li><a href="http://pwc.com/us/en/multimedia/index.jhtml">Video library</a>
 			</li>
 		</ul>
         </li>
+	<li class="navsingle nav6"><a class="navstaticlink" href="http://pwc.com/us/en/careers/index.jhtml">Careers</a>
+	</li>
+	<li class="navsingle nav7"><a class="navstaticlink" href="http://pwc.com/us/en/open-university/index.jhtml">PwC Open University</a>
+  </li>
     </ul>
 </div>
 <div id="navbaseline"></div>
 </noindex> <!-- END Header -->
+		
+</div>
+
+<div id="header" class="mobile"><!-- START Header --><!-- Logo, country & languages -->
+<div id="headerleft"><div style="display: none;">Saturday December 21, 2013</div>
+<div id="headerlogo">
+	<a href="/us/en/">
+		<img height="72" border="0" width="94" alt="PwC logo" src="http://pwc.com/en_GX/webadmin/assets/image/pwclogo.gif">
+	</a>
+</div></div>
+
+<!-- Search -->
+<div id="headerright">
+
+	
+	
+	<div id="mobileheaderright">
+				<div id="headercountry"><span>United States</span></div>
+				<div id="headerlang"><!--x--></div>
+	</div>
+	<div id="mobileheadernav">
+			<form name="frmmobilesearch" method="get" id="frmmobilesearch" action="/en_US/us/webadmin/search/searchus.jhtml">
+				<label for="searchfield"><img height="1" border="0" width="1" src="http://pwc.com/en_GX/webadmin/assets/image/tran.gif" alt="Search"></label>
+				<input type="text" value="" size="30" name="q" id="searchfield" accesskey="4">
+				<input type="hidden" value="mob" name="tp">
+				<div id="mobileheadersearch"><img src="http://pwc.com/en_GX/webadmin/assets/image/m-search.gif"></div>
+				<input type="image" src="http://pwc.com/en_GX/webadmin/assets/image/m-search.gif" name="mobilesearchsubmit" id="mobilesearchsubmit" alt="Search">
+			</form>
+		<div id="mobileheadermenu"><img src="http://pwc.com/en_GX/webadmin/assets/image/m-menu.gif"></div>
+	</div>
+		
+
+</div>
+
+	
+	<div id="navbaseline"><!--x--></div>
 		
 </div>
             <!-- END Header -->        
@@ -370,7 +480,7 @@ h1 {display:none;}
                 	<div class="hr-solid"><hr/></div>
 
                 	
-						<div class="col col-maroon bottom">
+						<div class="col col-maroon brand-custom bottom">
 							<div class="heading brand-heading">
 								<h2>Video</h2>
 							</div>
@@ -431,10 +541,10 @@ h1 {display:none;}
 				<div class="clearfix tab-content-wrap" id="main-content" role="main">
 					<div id="make-your-plan" class="section-wrap custom-brand-section">
 						<section class="content-section grid-list">	
-							<div class="col col-pink brand-custom">
+							<div class="col col-pink brand-custom make-your-plan">
 								<div class="heading">
 									<h2 style="margin:0 0 20px !important;">Make your plan</h2>
-									<p><a style="color:#fff !important; text-decoration:none !important;"href="#">Complete this <u>workbook</u> to find out what makes you tick.<img src="images/wb.png"/></a>
+									<p><a style="color:#fff !important; text-decoration:none !important;"href="#">Complete this <u>workbook</u> to find out what makes you tick.<br/><img src="images/wb.png"/></a>
 									</p>
 								</div><!--end .heading-->
 							</div><!--end .col col-red-->
@@ -637,7 +747,7 @@ h1 {display:none;}
 
 												</table>
 											</div>
-											<div style="width:240; float:left;margin-top:10px;" >
+											<div class="custom-orange-table"style="width:240; float:left;margin-top:10px;" >
 												<table class="orange"style="width:215px;">
 													<tbody>
 													<th style="color:#fff;text-align: left;">Networking dont’s</th>
@@ -673,6 +783,7 @@ h1 {display:none;}
 													<tr><td>&nbsp;</td></tr>
 												</table>
 											</div>
+											<div style="clear:both"></div>
 										</div><!-- end .brand-toggle-content -->
 									</div><!--end .brand-toggle -->		
 
@@ -710,7 +821,7 @@ h1 {display:none;}
 													<li class="custom-brand-li">Don’t hide behind email. Pick up the phone. Walk to someone’s desk. Remember, the tone of your voice and non-verbal cues can help convey your message and form a connection.</li>
 												</ol>
 											</div><!-- end .custom-brand-inline-float-rt -->
-											<div class="custom-brand-inline-float-left">
+											<div class="custom-brand-inline-float-left" style="margin-top:10px">
 												<p style="padding-bottom:5px!important;" class="font-orange font-bold"><font style="color:#000">A</font>ttitude and authenticity matter
 </p>
 												<p style="padding-bottom:5px!important;" class="font-orange font-bold"><font style="color:#000">B</font>ring your best self to each interaction
