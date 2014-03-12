@@ -25,7 +25,7 @@ jQuery(document).ready(function(){
 		var inner_content = jQuery(this).children('.inner-content');
 		var chev = jQuery(this).find('.chevron');
 		var height_adj = inner_content.height();
-		var column = jQuery('#career-path');
+		var column = jQuery('#explore-team');
 		window.column_height = column.height();
 		chev.css({ WebkitTransform: 'rotate(' + 90 + 'deg)'});
       // For Mozilla browser: e.g. Firefox
@@ -36,7 +36,7 @@ jQuery(document).ready(function(){
 	},function(){
 		var chev = jQuery(this).find('.chevron');
 		var inner_content = jQuery(this).children('.inner-content');
-		var column = jQuery('#career-path');
+		var column = jQuery('#explore-team');
 		column.height(window.column_height);
 		chev.css({ WebkitTransform: 'rotate(' + 0 + 'deg)'});
       // For Mozilla browser: e.g. Firefox

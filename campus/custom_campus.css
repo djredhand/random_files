@@ -81,14 +81,28 @@
 #program-grid{
 	padding: 0 0 0 0px !important;
 }
-
-#career-path{
-	height:386px;
+#pwc-tax{
+	height: 112px;
 }
+#who-we-are{
+	height: 246px;
+}
+#career-path{
+	height:140px;
+}
+img.career-path {
+	margin-top: 25px;
+}
+
+#explore-team{
+	height:501px;
+}
+
 /* Tax page*/
 .tax-toggle{
 	margin-right: 0px !important;
 	width: 300px;
+	cursor: pointer;
 }
 .tax-toggle h2{
 color: rgb(255, 255, 255) !important;
