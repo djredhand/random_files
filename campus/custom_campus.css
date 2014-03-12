@@ -78,7 +78,9 @@
 .grid-inner-content{
 	font-weight: bold;
 }
-
+#program-grid{
+	padding: 0 0 0 0px !important;
+}
 /* Main overrides */
 #center #main-container .programs-grid {
 padding: 20px 0 10px;
