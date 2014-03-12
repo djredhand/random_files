@@ -21,27 +21,29 @@
 }
 .program-row{
 	width: 464px;
+	margin: 3px 0;
 }
 .header-row{
 	width: 464px;
+	background: #f7f6f5;
 }
 .grid-space1{
-	width:100px;
+	width:96px;
 }
 .grid{
-display: inline-block;
-min-width: 45px;
-height: 10px;
-padding: 12px 8px 18px 8px;
+	display: inline-block;
+	min-width: 45px;
+	height: 10px;
+	padding: 12px 8px 18px 8px;
 	}
 .grid.arrow{
-background-attachment: fixed;
-background:url('arrow_circle_white.png') no-repeat;
-background-position-y: bottom;
-padding: 10px 0 8px;
-margin: 0px 0 0 21px;
-position: relative;
-top: 6px;
+	background-attachment: fixed;
+	background:url('arrow_circle_white.png') no-repeat;
+	background-position-y: bottom;
+	padding: 10px 0 8px;
+	margin: 0px 0 0 21px;
+	position: relative;
+	top: 6px;
 }
 .grid-header{
 	color: #fff;
