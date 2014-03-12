@@ -20,6 +20,7 @@
 	background: #602521;
 }
 .program-row{
+	cursor: pointer;
 	width: 464px;
 	margin: 3px 0;
 }
@@ -45,6 +46,15 @@
 	position: relative;
 	top: 6px;
 }
+.grid.arrow-blank{
+	background-attachment: fixed;
+	background:url('arrow_circle_whit.png') no-repeat;
+	background-position-y: bottom;
+	padding: 10px 0 8px;
+	margin: 0px 0 0 21px;
+	position: relative;
+	top: 6px;
+}
 .grid-header{
 	color: #fff;
 	font-family: Georgia, serif;
@@ -52,6 +62,23 @@
 	font-style: italic;
 	width: 100px;
 }
+.grid-header{
+	display: inline-block;
+}
+.grid-inner-content{
+	display: inline-block;;
+}
+
+.program-row .program-content{
+	display: none;
+	cursor: pointer;
+	background: #f7f6f5;
+	height: 40px;
+}
+.grid-inner-content{
+	font-weight: bold;
+}
+
 /* Main overrides */
 #center #main-container .programs-grid {
 padding: 20px 0 10px;
