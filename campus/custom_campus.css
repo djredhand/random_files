@@ -53,3 +53,9 @@
 	width: 100px;
 }
 
+#center #main-container .programs-grid {
+padding: 20px 0 10px;
+height: 301px !important;
+position: relative;
+z-index: 1;
+}
