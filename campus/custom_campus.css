@@ -1,0 +1,53 @@
+#student-programs .col {
+	height:100% !important;
+}
+.challenge-row{
+	background: #eb6409;
+}
+.explore-row{
+	background: #e7335a;
+}
+.start-row{
+	background: #f38e02;
+}
+.elevate-row{
+	background: #821018;
+}
+.advance-row{
+	background:#e41926;
+}
+.launch-row{
+	background: #602521;
+}
+.program-row{
+	width: 464px;
+}
+.header-row{
+	width: 464px;
+}
+.grid-space1{
+	width:100px;
+}
+.grid{
+display: inline-block;
+min-width: 45px;
+height: 10px;
+padding: 12px 8px 18px 8px;
+	}
+.grid.arrow{
+background-attachment: fixed;
+background:url('arrow_circle_white.png') no-repeat;
+background-position-y: bottom;
+padding: 10px 0 8px;
+margin: 0px 0 0 21px;
+position: relative;
+top: 6px;
+}
+.grid-header{
+	color: #fff;
+	font-family: Georgia, serif;
+	font-size: 17px;
+	font-style: italic;
+	width: 100px;
+}
+
