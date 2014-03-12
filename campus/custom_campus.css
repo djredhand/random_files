@@ -81,6 +81,37 @@
 #program-grid{
 	padding: 0 0 0 0px !important;
 }
+
+#career-path{
+	height:386px;
+}
+/* Tax page*/
+.tax-toggle{
+	margin-right: 0px !important;
+	width: 300px;
+}
+.tax-toggle h2{
+color: rgb(255, 255, 255) !important;
+font-family: Georgia,serif !important;
+font-size: 17px;
+font-style: italic !important;
+width: 445px;
+margin-left: 14px !important;
+display: inline-block;
+line-height: 45px;
+}
+.chevron{
+	 color: #FFFFFF;
+    display: inline-block;
+    font-size: 60px;
+    line-height: 20px;
+    margin: 7px 0 0;
+    position: absolute;
+}
+.tax-toggle .inner-content{
+	display: none;
+	margin-bottom: -2px !important;
+}
 /* Main overrides */
 #center #main-container .programs-grid {
 padding: 20px 0 10px;
@@ -95,4 +126,9 @@ height: 100px;
 width: 196px;
 padding: 0px 20px;
 margin: 0 12px 0 0;
+}
+
+#main-container .content-section .tax-toggle .inner-content {
+    display: none;
+    padding: 0 10px;
 }
