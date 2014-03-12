@@ -52,10 +52,18 @@
 	font-style: italic;
 	width: 100px;
 }
-
+/* Main overrides */
 #center #main-container .programs-grid {
 padding: 20px 0 10px;
 height: 301px !important;
 position: relative;
 z-index: 1;
+}
+
+#center #main-container .programs-grid .col {
+float: left;
+height: 100px;
+width: 196px;
+padding: 0px 20px;
+margin: 0 12px 0 0;
 }
